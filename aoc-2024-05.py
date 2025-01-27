@@ -39,5 +39,11 @@ dat = """47|53
 """.split('\n')
 
 rules = [r for r in dat if '|' in r]
-pages = [p for p in dat if ',' in p]
+updates = [p for p in dat if ',' in p]
+
+
+
+# for update in updates:
+pages = np.array(updates[0].split(','), dtype=int)
+
 
